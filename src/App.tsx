@@ -68,7 +68,7 @@ const App = () => {
       // Pegar todas as descrições geology
       const geologyDescriptions = holeGeologyData
         .sort((a, b) => parseNumber(a["FROM"]) - parseNumber(b["FROM"])) // ordenar por "from"
-        .map((entry) => String(entry["Descrição"] || entry["geology"] || ""))
+        .map((entry) => String(entry["DESCRIÇÃO"] || entry["GEOLOGY"] || ""))
         .filter((desc) => desc.trim() !== "");
 
       // Dados do NSPT
